@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assert.css" media="screen">
     <script src="prime-calc1s.js"></script>
 </head>
-<body>
+<body onload="check4prime = new Check4Prime(); ">
 
 <h2>Prime number tests</h2>
 
@@ -15,7 +15,7 @@
 
 <form>
     <input type="text" name="number">
-    <button type="button" id="inpbtn" onclick='check(number.value);'>Submit</button>
+    <button type="button" id="inpbtn" onclick="checkFromInput();">Submit</button>
 </form>
 
 <ul id="output"></ul>
