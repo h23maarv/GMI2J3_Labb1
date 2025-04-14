@@ -28,7 +28,6 @@ class KnownValues(unittest.TestCase):
         (3940, 'MMMCMXL'), (3999, 'MMMCMXCIX')
     )
 
-
     # Tests that to_roman() returns the correct Roman numeral for each integer
     def test_to_known_values(self):
         for integer, numeral in self.known_values:

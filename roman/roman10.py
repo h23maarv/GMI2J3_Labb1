@@ -12,7 +12,7 @@ roman_numeral_pattern = re.compile('''^     # beginning of string
     (XC|XL|L?X{0,3})                        # tens - 90 (XC), 40 (XL), 0-30 (0 to 3 Xs), # or 50-80 (L, followed by 0 to 3 Xs)
     (IX|IV|V?I{0,3})                        # ones - 9 (IX), 4 (IV), 0-3 (0 to 3 Is), # or 5-8 (V, followed by 0 to 3 Is)
     $                                       # end of string''',
-    re.VERBOSE)             # Allows whitespace and comments in regex
+    re.VERBOSE)                             # Allows whitespace and comments in regex
 
 # A tuple defining the mapping between Roman characters and their integer values
 # Used for conversion from integer to Roman numeral

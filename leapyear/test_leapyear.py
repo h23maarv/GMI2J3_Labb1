@@ -77,5 +77,5 @@ class LeapYearEdgeCasesTest(unittest.TestCase):
                 self.assertFalse(leapyear.to_leap_year(year), f"{year} should not be a leap year")
 
 # Run the unit tests with more detailed output
-if __name__ == '__main__':
+if __name__ == '__main__': # pragma: no cover
     unittest.main(verbosity=2)

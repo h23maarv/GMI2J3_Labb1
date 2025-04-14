@@ -7,6 +7,9 @@ For example; the century years 1600 and 2000 are leap years,
 but the century years 1700, 1800, and 1900 are not.
 '''
 
+# run with python -m unittest -v test_leapyear.py
+# run with coverage report -m test_leapyear.py
+
 class LeapYearError(ValueError): pass # Base class for leap year-related errors.
 class NotIntegerError(LeapYearError): pass # Raised when the year is not an integer.
 class OutOfRangeError(LeapYearError): pass # Raised when the year is out of valid range.
@@ -31,7 +34,7 @@ def to_leap_year(year):
         return False  # Not a leap year
 
 
-if __name__ == '__main__': #pregma: no cover
+if __name__ == '__main__': # pragma: no cover
     try:
         year = int(input("Enter a year: "))
         print(f"{year} is leap year? {to_leap_year(year)}")
